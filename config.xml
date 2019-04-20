@@ -11,5 +11,5 @@
     <access origin="*" />
 	
 	<plugin name="cordova-plugin-device-motion" source="npm"/>
-	<plugin name="cordova-plugin-local-notifications-mm" source="npm"/>
+	<plugin name="diogo-cordova-plugin-local-notifications" source="npm"/>
 </widget>
