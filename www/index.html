@@ -14,6 +14,11 @@
 
             function onDeviceReady() {
                 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+                cordova.plugins.notification.local.schedule({
+                    title: 'My first notification',
+                    text: 'Thats pretty easy...',
+                    foreground: true
+                });
             }
 
             function onSuccess(acceleration) {
