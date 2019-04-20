@@ -30,10 +30,10 @@
 
             function pushNotification() {
                 cordova.plugins.notification.local.schedule({
-                    id: 1,
-                    title: "Message Title",
-                    message: "Message Text"
-                });              
+                    title: 'My first notification',
+                    text: 'Thats pretty easy...',
+                    foreground: true
+                });            
             }
 
             window.setInterval(function(){
