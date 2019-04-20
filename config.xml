@@ -10,9 +10,7 @@
     <content src="index.html" />
     <access origin="*" />
 	
-	<preference name='phonegap-version' value='cli-7.0.1' />
-	
-    <preference name="android-targetSdkVersion" value="27" />
+	<preference name="phonegap-version" value="cli-8.1.1" />
 	
 	<plugin name="cordova-plugin-device-motion" source="npm"/>
 	<plugin name="de.appplant.cordova.plugin.local-notification"/>
