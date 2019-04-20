@@ -9,16 +9,13 @@
         <p id="chabih">
 
         </p>
+
+        <input type="button" value="Notify Me" onclick="pushNotification();" />
         <script type="text/javascript" src="cordova.js"></script>
         <script>
 
             function onDeviceReady() {
                 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
-                cordova.plugins.notification.local.schedule({
-                    title: 'My first notification',
-                    text: 'Thats pretty easy...',
-                    foreground: true
-                });
             }
 
             function onSuccess(acceleration) {
@@ -29,6 +26,14 @@
 
             function onError() {
                 alert("error");
+            }
+
+            function pushNotification() {
+                cordova.plugins.notification.local.schedule({
+                    title: 'My first notification',
+                    text: 'Thats pretty easy...',
+                    foreground: true
+                });                
             }
 
             window.setInterval(function(){
